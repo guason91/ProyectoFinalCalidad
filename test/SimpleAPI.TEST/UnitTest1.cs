@@ -32,7 +32,7 @@ namespace SimpleAPI.TEST
         public void GetReturnsError()
         {
             var returnValue = controller.Get(4);
-            Assert.Equal("ERROR", returnValue.Value);
+            Assert.Equal("error", returnValue.Value);
         }
 
         [Fact]

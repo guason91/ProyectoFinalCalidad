@@ -37,7 +37,7 @@ namespace SimpleAPI.Controllers
                 }
                 else
                 {
-                    return "ERROR";
+                    return "error";
                 }
         }
 
