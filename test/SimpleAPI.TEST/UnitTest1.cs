@@ -25,7 +25,7 @@ namespace SimpleAPI.TEST
         public void GetReturnsResultado()
         {
             var returnValue = controller.Get(3);
-            Assert.Equal("Operado Correctamente", returnValue.Value);
+            Assert.Equal("Operado correctamente", returnValue.Value);
         }
 
         [Fact]
