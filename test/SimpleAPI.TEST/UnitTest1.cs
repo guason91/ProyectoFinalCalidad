@@ -15,6 +15,27 @@ namespace SimpleAPI.TEST
         }
 
         [Fact]
+        public void GetReturnsValor()
+        {
+            var returnValue = controller.Get(2);
+            Assert.Equal("150", returnValue.Value);
+        }
+
+        [Fact]
+        public void GetReturnsResultado()
+        {
+            var returnValue = controller.Get(3);
+            Assert.Equal("Operado Correctamente", returnValue.Value);
+        }
+
+        [Fact]
+        public void GetReturnsError()
+        {
+            var returnValue = controller.Get(4);
+            Assert.Equal("ERROR", returnValue.Value);
+        }
+
+        [Fact]
         public void Test1()
         {
 
