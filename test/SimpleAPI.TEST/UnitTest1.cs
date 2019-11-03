@@ -18,7 +18,7 @@ namespace SimpleAPI.TEST
         public void GetReturnsValor()
         {
             var returnValue = controller.Get(2);
-            Assert.Equal("100", returnValue.Value);
+            Assert.Equal("150", returnValue.Value);
         }
 
         [Fact]
